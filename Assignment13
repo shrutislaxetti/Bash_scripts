@@ -1,0 +1,26 @@
+Develop a simple three item menu to display on the terminal. Your script, upon display of the menu, 
+should prompt the user to choose one of the three available options. Using the 'case' statement from the course, 
+display three unique messages depending on which number they chose, with a catch all message letting them know if 
+they went outside the bounds of instructions.
+
+echo -e "Choose an Item from the Menu:\n1.Pizza\n2.Burger\n3.Sides & Beverages"
+read item
+order=$item
+
+case $item in
+ Pizza | pizza)
+ echo "Your order for the ${order} is taken,Please wait for some times to receive your order..."
+ ;;                             
+
+ Burger | burger)
+ echo "Your order for the ${order} is taken,Please wait for some times to receive your order..."
+ ;;
+
+ "Sides&Beverages" | sides | beverages | "sides&beverages" )
+ echo "Your order for the ${order} is taken,Please wait for some times to receive your order..."
+ ;;
+
+ *)
+ echo -n "unknown"
+ ;;
+esac

@@ -1,0 +1,17 @@
+Create a script that interacts with the user. You will want to prompt the user to enter the following information (which you will capture and place into the following variables):
+
+FIRSTNAME
+LASTNAME
+USERAGE
+
+Greet the user with their name and current age displayed and then calculate and display their age in 10 years.
+
+echo" Enter FirstName"
+read FIRSTNAME
+echo" Enter LastName"
+read LASTNAME
+echo" Enter Your Age"
+read USERAGE
+let count=$LastName+10
+echo "Hi ${FIRSTNAME}${FIRSTNAME}, Your are now ${FIRSTNAME} old and you will turn to $count years in next 10 years.."
+

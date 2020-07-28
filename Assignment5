@@ -1,0 +1,29 @@
+Write a script that runs three commands:
+
+Evaluate an arithmetic expression
+Attempt to remove a file that does not exist in the current directory
+Evaluate another arithmetic expression
+
+Immediately after each command, echo the exit status of that command to the terminal using the 
+appropriate variable to show success and failure exit codes.
+
+#arithmetic expression
+declare -i p="4+5"
+echo $p
+9
+
+#remove a file 
+read file
+if [[ ! -f /home/ec2-user/$file ]] OR if [[ ! -e /home/ec2-user/$file]]
+then
+  echo "file not found"
+  echo "rm $file"
+else
+   echo "exists"
+fi
+
+#arithmetic expression
+let n=15/2
+$ echo $n
+7
+
